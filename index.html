@@ -28,31 +28,33 @@
             <p>You <em>know</em> you want to.</p>
                 
             <div class="form">
-                <form id="signup" action="https://httpbin.org/post" method="post" onsubmit="return validatePassword()">
-                    <legend>Let's do this!</legend>
-                    <br>
-                    <div class="column">
-                        <label for="firstname">FIRST NAME</label><br>
-                        <input type="text" id="firstname" name="firstname" required>
-                        <br><br>
-                        <label for="email">EMAIL</label><br>
-                        <input type="email" id="email" name="email" required>
-                        <br><br>
-                        <label for="password">PASSWORD</label><br>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="column">
-                        <label for="lastname">LAST NAME</label><br>
-                        <input type="text" id="lastname" name="lastname" required>
-                        <br><br>
-                        <label for="number">PHONE NUMBER</label><br>
-                        <input type="text" id="number" name="number" pattern="\+?\d+"required>
-                        <br><br>
-                        <label for="cpassword">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="cpassword" name="cpassword" required>
-                    </div>
-                </form>
-            </div> 
+                <table>
+                    <form id="signup" action="https://httpbin.org/post" method="post" onsubmit="return validatePassword()">
+                        <legend>Let's do this!</legend>
+                        <br>
+                        <tr>
+                            <td><label for="firstname">FIRST NAME</label><br>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </td>
+                            <td><label for="lastname">LAST NAME</label><br>
+                                <input type="text" id="lastname" name="lastname" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email">EMAIL</label></br>
+                                <input type="email" id="email" name="email" required></td>
+                            <td><label for="number">PHONE NUMBER</label><br>
+                                <input type="text" id="number" name="number" pattern="\+?\d+" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">PASSWORD</label><br>
+                                <input type="password" id="password" name="password" required></td>
+                            <td><label for="cpassword">CONFIRM PASSWORD</label><br>
+                                <input type="password" id="cpassword" name="cpassword" required></td>
+                        </tr>
+                    </form>
+                </table> 
+            </div>
             <input type="submit" form="signup" value="Create Account">
             <br>
             <span>Already have an account? <a href="#">Log in</a></span>
