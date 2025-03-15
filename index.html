@@ -28,7 +28,7 @@
             <p>You <em>know</em> you want to.</p>
                 
             <div class="form">
-                <form id="signup" method="post">
+                <form id="signup" action="https://httpbin.org/post" method="post" onsubmit="return validatePassword()">
                     <legend>Let's do this!</legend>
                     <br>
                     <div class="column">
@@ -46,7 +46,7 @@
                         <input type="text" id="lastname" name="lastname" required>
                         <br><br>
                         <label for="number">PHONE NUMBER</label><br>
-                        <input type="text" id="number" name="number" required>
+                        <input type="text" id="number" name="number" pattern="\+?\d+"required>
                         <br><br>
                         <label for="cpassword">CONFIRM PASSWORD</label><br>
                         <input type="password" id="cpassword" name="cpassword" required>
@@ -55,7 +55,7 @@
             </div> 
             <input type="submit" form="signup" value="Create Account">
             <br>
-            <span>Already have an account? <a>Log in</a></span>
+            <span>Already have an account? <a href="#">Log in</a></span>
         </div>
     </div>
     
