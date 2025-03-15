@@ -2,6 +2,58 @@
     font-family: norse-bold;
     src: url(assets/Norse-Bold.otf);
 }
-h1{
+/* deletes white border */
+html, body{
+    font-family: sans-serif;
+    padding:0px;
+    margin:0px;
+}
+#sidebar{
+    position:relative;
+}
+.title{
+    color:white;
     font-family: norse-bold, sans-serif;
+    font-size:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    padding:10px;
+    position:relative;
+    top:20%;
+}
+.title img{
+    height:100%;
+    object-fit:contain;
+}
+.credit{
+    color:rgb(200, 200, 200);
+    font-size:13px;
+    text-decoration: none;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
+.credit p a{
+    color:rgb(200, 200, 200);
+}
+
+#container{
+    display:flex;
+}
+#sidebar{
+    width:30vw;
+    height:100vh;
+    background-image: url(assets/leaf.avif);
+    background-size:cover;
+    background-color:pink;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#main{
+    width:70vw;
+    background-color: red;
 }
